@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<head>
+    <script src="test.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sliding Menu</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav">
+        <input type="text" id="myInput" onkeyup="Search()" placeholder="Search for items">
+    </div>
+    <div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+        <div id="myDropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+        </div>
+    </div>
+    <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
+        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
+        <button class="btn" onclick="filterSelection('people')"> People</button>
+    </div>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+        <div class="column nature">
+            <div class="content">
+                <img src="/w3images/mountains.jpg" alt="Mountains" style="width:100%">
+                <h4>Mountains</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="/w3images/lights.jpg" alt="Lights" style="width:100%">
+                <h4>Lights</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column nature">
+            <div class="content">
+                <img src="/w3images/nature.jpg" alt="Nature" style="width:100%">
+                <h4>Forest</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column cars">
+            <div class="content">
+                <img src="/w3images/cars1.jpg" alt="Car" style="width:100%">
+                <h4>Retro</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+                <img src="/w3images/cars2.jpg" alt="Car" style="width:100%">
+                <h4>Fast</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column cars">
+            <div class="content">
+                <img src="/w3images/cars3.jpg" alt="Car" style="width:100%">
+                <h4>Classic</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+
+        <div class="column people">
+            <div class="content">
+                <img src="/w3images/people1.jpg" alt="People" style="width:100%">
+                <h4>Girl</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <a href="Shopping/2.html">
+                    <img src="/w3images/people2.jpg" alt="People" style="width:100%">
+                    <h4>Man</h4>
+                    <p>Lorem ipsum dolor..</p>
+                </a>
+            </div>
+        </div>
+        <div class="column people">
+            <div class="content">
+                <img src="/w3images/people3.jpg" alt="People" style="width:100%">
+                <h4>Woman</h4>
+                <p>Lorem ipsum dolor..</p>
+            </div>
+        </div>
+        <!-- END GRID -->
+    </div>
+    <ul id="myUL">
+        <li>
+            <a href="Shopping/1.html">item1<br>
+                <img alt="AAA" src="https://www.qries.com/images/banner_logo.png"
+                width="150" height="70">
+            </a>
+        </li>
+        <li><a href="Shopping/2.html">Agnes</a></li>
+
+        <li><a href="Shopping/3.html">Billy</a></li>
+        <li><a href="Shopping/4.html">Bob</a></li>
+
+        <li><a href="Shopping/5.html">Calvin</a></li>
+        <li><a href="Shopping/6.html">Christina</a></li>
+        <li><a href="Shopping/7.html">Cindy</a></li>
+    </ul>
+    <div id="sidebar">
+        <div class="toggle-btn" onclick="show()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul>
+            <a href="Home_page.html">
+                <section class="home">
+                    <li class="menu-item"><i class="fa fa-home"></i>Home</li>
+            </a>
+            <a href="test.html">
+                <li class="toggle-down-1">Work</li>
+            </a>
+        </ul>
+    </div>
+    </div>
+
+</body>

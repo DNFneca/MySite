@@ -1,0 +1,248 @@
+/* Add a black background color to the top navigation */
+
+*,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.topnav {
+    background-color: rgba(255, 123, 0, 0.958);
+    float: left;
+    overflow: hidden;
+    text-align: justify;
+    text-decoration: none;
+    background-color: black;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.top-menu {
+    background-color: rgba(255, 123, 0, 0.958);
+    float: left;
+    overflow: hidden;
+    text-align: justify;
+    text-decoration: none;
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Style the links inside the navigation bar */
+
+.topnav a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 75%;
+}
+
+
+/* Change the color of links on hover */
+
+.topnav a:hover {
+    background-color: #ddd;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* Add a color to the active/current link */
+
+.topnav a.active {
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+    float: left;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.544);
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 10px;
+}
+
+#myInput {
+    position: fixed;
+    background-image: url('/css/searchicon.png');
+    /* Add a search icon to input */
+    background-position: 10px 12px;
+    /* Position the search icon */
+    background-repeat: no-repeat;
+    /* Do not repeat the icon image */
+    width: 20%;
+    /* Full-width */
+    font-size: 16px;
+    /* Increase font-size */
+    padding: 12px 20px 12px 40px;
+    /* Add some padding */
+    border: 1px solid #ddd;
+    /* Add a grey border */
+    margin-bottom: 12px;
+    margin-left: 35%;
+    /* Add some space below the input */
+    float: right;
+}
+
+#myUL {
+    /* Remove default list styling */
+    list-style-type: none;
+    padding: 10px;
+    width: 98%;
+    height: 100%;
+    float: left;
+}
+
+#myUL li a {
+    border: 1px solid rgb(255, 115, 0);
+    text-align: center;
+    /* Add a border to all links */
+    margin-top: 100px;
+    margin-left: 25%;
+    height: fit-content;
+    width: fit-content;
+    /* Prevent double borders */
+    background-color: #f6f6f6;
+    /* Grey background color */
+    padding: 5px;
+    /* Add some padding */
+    text-decoration: none;
+    /* Remove default text underline */
+    font-size: 15px;
+    /* Increase the font-size */
+    color: black;
+    /* Add a black text color */
+    display: block;
+    /* Make it into a block element to fill the whole list */
+}
+
+.topnav a.item1 {
+    margin-top: 200px;
+}
+
+#myUL li a:hover:not(.header) {
+    background-color: #eee;
+    /* Add a hover effect to all links, except for headers */
+}
+
+#sidebar {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    background: #000;
+    left: -300px;
+    transition: 1s;
+}
+
+#sidebar ul li {
+    list-style: none;
+    color: white;
+    font-size: 20px;
+    padding: 26px 24px;
+}
+
+#sidebar .toggle-btn {
+    position: absolute;
+    top: 30px;
+    left: 330px;
+}
+
+.toggle-btn span {
+    width: 45px;
+    height: 4px;
+    background: #000;
+    display: block;
+    margin-top: 4px;
+}
+
+#sidebar.active {
+    left: 0;
+}
+
+
+.main-menu {
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 0px 0px 20px #d4d4d4;
+    width: 70px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    transition: .3s ease;
+}
+
+.main-menu:hover {
+    width: 200px;
+    overflow-y: scroll;
+}
+
+.main-menu .menu-item {
+    padding: 10px;
+}
+
+.main-menu .menu-item:hover {
+    background-color: #d6d6d6;
+    cursor: pointer;
+}
+
+.main-menu .menu-item .fa {
+    color: gray;
+    width: 40px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+.main-menu .menu-item:hover>.fa {
+    color: #1d0daa;
+}
+
+section.home {
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+ ::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+ ::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 10px;
+}
